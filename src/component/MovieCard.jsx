@@ -1,4 +1,3 @@
-
 import {noMovie, star} from '../assets/images'
 // Destruction the properties inside the movie it self
 export default function MovieCard ({movie:{title,vote_average, poster_path, release_date, original_language}}){
@@ -22,8 +21,6 @@ export default function MovieCard ({movie:{title,vote_average, poster_path, rele
                                 {/* S-split niya yung date and s-store sa array and then kukunin lang yung zero index which is yung YEAR */}
                                 {release_date ? release_date.split('-')[0] :'N/A'}
                             </p>
-
-                          
                         </div>
                     </div>
                 </div>

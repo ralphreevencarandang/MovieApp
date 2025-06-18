@@ -44,10 +44,9 @@ function App() {
       ()=>{
       
         setDebouncedSearchTerm(searchTerm)},
-       500,
-       [searchTerm]);
+        500,
+        [searchTerm]);
       
-    
       //  Function to fetch the trending movies
     const loadTrendingMovies  = async () => {
       try{
@@ -56,7 +55,6 @@ function App() {
       }catch(error){
         console.log('Error Fetching Trending Movies', error)
       }
-
     }
     
 
@@ -156,11 +154,8 @@ function App() {
                         
                   </section>  
               </div>
-           
-
           </div>
       </main>
-    
     </>
   )
 }
