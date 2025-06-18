@@ -1,11 +1,13 @@
 import {noMovie, star} from '../assets/images'
 // Destruction the properties inside the movie it self
 export default function MovieCard ({movie:{title,vote_average, poster_path, release_date, original_language}}){
+    console.log(poster_path);
+    
     return(
         <>
             <div className="movie-card">
                 {/* if nag e-exist ang poster path sa isang movie then irerender niya to else No Movie Poster ang irerender niyt */}
-                <img src={poster_path ? `https:/image.tmdb.org/t/p/w500/${poster_path}` : noMovie} alt={title} />
+                <img src={poster_path ? `https://image.tmdb.org/t/p/w500/${poster_path}` : noMovie} alt={title} />
               
                 <div className='mt-4'>
                     <h3>{title}</h3>
